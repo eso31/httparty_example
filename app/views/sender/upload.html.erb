@@ -1,0 +1,13 @@
+<h1>Hello World!</h1>
+
+
+<!--<%= form_tag({action: :upload}, multipart: true) do %>
+  <%= file_field_tag 'picture' %>
+  <%= submit_tag("Send") %>
+<% end %>-->
+
+
+<%= form_tag(sender_get_file_path) do %>
+   <%= text_field_tag(:subject, class: 'form-control')%>
+   <%= submit_tag "Submit"%>
+<% end %>
